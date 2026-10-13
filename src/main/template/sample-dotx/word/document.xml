@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<!--
+  Sample body for sample-template.dotx: one paragraph or table per style.
+  Generated documents drop this body and keep only the final sectPr (page size and margins).
+  Page: A4 11906 x 16838 twips; margins top 1418, right 1134, bottom 1134, left 2268 (2.5 / 2 / 2 / 4 cm).
+-->
+<w:document xmlns:w="http://schemas.openxmlformats.org/wordprocessingml/2006/main"
+            xmlns:r="http://schemas.openxmlformats.org/officeDocument/2006/relationships">
+  <w:body>
+    <w:p><w:pPr><w:pStyle w:val="Title"/></w:pPr><w:r><w:t xml:space="preserve">Sample Template (Title)</w:t></w:r></w:p>
+    <w:p><w:pPr><w:pStyle w:val="Heading1"/></w:pPr><w:r><w:t xml:space="preserve">Heading 1 (Heading1)</w:t></w:r></w:p>
+    <w:p><w:pPr><w:pStyle w:val="BodyText"/></w:pPr><w:r><w:t xml:space="preserve">Body Text has 6 pt before, 12 pt after and 1.5 line spacing. A phrase can be </w:t></w:r><w:r><w:rPr><w:rStyle w:val="ShadedText"/></w:rPr><w:t>shaded with Shaded Text</w:t></w:r><w:r><w:t xml:space="preserve"> inside a sentence.</w:t></w:r></w:p>
+    <w:p><w:pPr><w:pStyle w:val="Heading2"/></w:pPr><w:r><w:t xml:space="preserve">Heading 2 (Heading2)</w:t></w:r></w:p>
+    <w:p><w:r><w:t xml:space="preserve">Normal has 8 pt after and 1.15 line spacing.</w:t></w:r></w:p>
+    <w:p><w:pPr><w:pStyle w:val="ShadedPanel"/></w:pPr><w:r><w:t xml:space="preserve">Shaded Panel: a whole paragraph with a background fill, kept inside the margins by its indent.</w:t></w:r></w:p>
+    <w:p><w:r><w:t xml:space="preserve">Hyperlinks use the Hyperlink character style (blue, underlined).</w:t></w:r></w:p>
+    <w:tbl>
+      <w:tblPr><w:tblStyle w:val="TableBlue"/><w:tblW w:w="8504" w:type="dxa"/><w:tblLayout w:type="fixed"/><w:tblLook w:val="0420" w:firstRow="1" w:lastRow="0" w:firstColumn="0" w:lastColumn="0" w:noHBand="1" w:noVBand="1"/></w:tblPr>
+      <w:tblGrid><w:gridCol w:w="2834"/><w:gridCol w:w="2834"/><w:gridCol w:w="2836"/></w:tblGrid>
+      <w:tr><w:trPr><w:tblHeader/></w:trPr><w:tc><w:tcPr><w:tcW w:w="2834" w:type="dxa"/></w:tcPr><w:p><w:r><w:t>Style</w:t></w:r></w:p></w:tc><w:tc><w:tcPr><w:tcW w:w="2834" w:type="dxa"/></w:tcPr><w:p><w:r><w:t>Borders</w:t></w:r></w:p></w:tc><w:tc><w:tcPr><w:tcW w:w="2836" w:type="dxa"/></w:tcPr><w:p><w:r><w:t>Colour</w:t></w:r></w:p></w:tc></w:tr>
+      <w:tr><w:tc><w:tcPr><w:tcW w:w="2834" w:type="dxa"/></w:tcPr><w:p><w:r><w:t>TableBlue</w:t></w:r></w:p></w:tc><w:tc><w:tcPr><w:tcW w:w="2834" w:type="dxa"/></w:tcPr><w:p><w:r><w:t>all</w:t></w:r></w:p></w:tc><w:tc><w:tcPr><w:tcW w:w="2836" w:type="dxa"/></w:tcPr><w:p><w:r><w:t>2E75B6 blue</w:t></w:r></w:p></w:tc></w:tr>
+    </w:tbl>
+    <w:p><w:r><w:t xml:space="preserve"></w:t></w:r></w:p>
+    <w:tbl>
+      <w:tblPr><w:tblStyle w:val="TableRed"/><w:tblW w:w="8504" w:type="dxa"/><w:tblLayout w:type="fixed"/><w:tblLook w:val="0420" w:firstRow="1" w:lastRow="0" w:firstColumn="0" w:lastColumn="0" w:noHBand="1" w:noVBand="1"/></w:tblPr>
+      <w:tblGrid><w:gridCol w:w="2834"/><w:gridCol w:w="2834"/><w:gridCol w:w="2836"/></w:tblGrid>
+      <w:tr><w:trPr><w:tblHeader/></w:trPr><w:tc><w:tcPr><w:tcW w:w="2834" w:type="dxa"/></w:tcPr><w:p><w:r><w:t>Style</w:t></w:r></w:p></w:tc><w:tc><w:tcPr><w:tcW w:w="2834" w:type="dxa"/></w:tcPr><w:p><w:r><w:t>Borders</w:t></w:r></w:p></w:tc><w:tc><w:tcPr><w:tcW w:w="2836" w:type="dxa"/></w:tcPr><w:p><w:r><w:t>Colour</w:t></w:r></w:p></w:tc></w:tr>
+      <w:tr><w:tc><w:tcPr><w:tcW w:w="2834" w:type="dxa"/></w:tcPr><w:p><w:r><w:t>TableRed</w:t></w:r></w:p></w:tc><w:tc><w:tcPr><w:tcW w:w="2834" w:type="dxa"/></w:tcPr><w:p><w:r><w:t>all</w:t></w:r></w:p></w:tc><w:tc><w:tcPr><w:tcW w:w="2836" w:type="dxa"/></w:tcPr><w:p><w:r><w:t>C00000 red</w:t></w:r></w:p></w:tc></w:tr>
+    </w:tbl>
+    <w:p><w:r><w:t xml:space="preserve"></w:t></w:r></w:p>
+    <w:tbl>
+      <w:tblPr><w:tblStyle w:val="TableTwoTone"/><w:tblW w:w="8504" w:type="dxa"/><w:tblLayout w:type="fixed"/><w:tblLook w:val="0420" w:firstRow="1" w:lastRow="0" w:firstColumn="0" w:lastColumn="0" w:noHBand="1" w:noVBand="1"/></w:tblPr>
+      <w:tblGrid><w:gridCol w:w="2834"/><w:gridCol w:w="2834"/><w:gridCol w:w="2836"/></w:tblGrid>
+      <w:tr><w:trPr><w:tblHeader/></w:trPr><w:tc><w:tcPr><w:tcW w:w="2834" w:type="dxa"/></w:tcPr><w:p><w:r><w:t>Style</w:t></w:r></w:p></w:tc><w:tc><w:tcPr><w:tcW w:w="2834" w:type="dxa"/></w:tcPr><w:p><w:r><w:t>Borders</w:t></w:r></w:p></w:tc><w:tc><w:tcPr><w:tcW w:w="2836" w:type="dxa"/></w:tcPr><w:p><w:r><w:t>Colour</w:t></w:r></w:p></w:tc></w:tr>
+      <w:tr><w:tc><w:tcPr><w:tcW w:w="2834" w:type="dxa"/></w:tcPr><w:p><w:r><w:t>TableTwoTone</w:t></w:r></w:p></w:tc><w:tc><w:tcPr><w:tcW w:w="2834" w:type="dxa"/></w:tcPr><w:p><w:r><w:t>outer / inner</w:t></w:r></w:p></w:tc><w:tc><w:tcPr><w:tcW w:w="2836" w:type="dxa"/></w:tcPr><w:p><w:r><w:t>1F3864 / BFBFBF</w:t></w:r></w:p></w:tc></w:tr>
+    </w:tbl>
+    <w:p><w:r><w:t xml:space="preserve"></w:t></w:r></w:p>
+    <w:tbl>
+      <w:tblPr><w:tblStyle w:val="TableHeaderRule"/><w:tblW w:w="8504" w:type="dxa"/><w:tblLayout w:type="fixed"/><w:tblLook w:val="0420" w:firstRow="1" w:lastRow="0" w:firstColumn="0" w:lastColumn="0" w:noHBand="1" w:noVBand="1"/></w:tblPr>
+      <w:tblGrid><w:gridCol w:w="2834"/><w:gridCol w:w="2834"/><w:gridCol w:w="2836"/></w:tblGrid>
+      <w:tr><w:trPr><w:tblHeader/></w:trPr><w:tc><w:tcPr><w:tcW w:w="2834" w:type="dxa"/></w:tcPr><w:p><w:r><w:t>Style</w:t></w:r></w:p></w:tc><w:tc><w:tcPr><w:tcW w:w="2834" w:type="dxa"/></w:tcPr><w:p><w:r><w:t>Borders</w:t></w:r></w:p></w:tc><w:tc><w:tcPr><w:tcW w:w="2836" w:type="dxa"/></w:tcPr><w:p><w:r><w:t>Colour</w:t></w:r></w:p></w:tc></w:tr>
+      <w:tr><w:tc><w:tcPr><w:tcW w:w="2834" w:type="dxa"/></w:tcPr><w:p><w:r><w:t>TableHeaderRule</w:t></w:r></w:p></w:tc><w:tc><w:tcPr><w:tcW w:w="2834" w:type="dxa"/></w:tcPr><w:p><w:r><w:t>rule under header only</w:t></w:r></w:p></w:tc><w:tc><w:tcPr><w:tcW w:w="2836" w:type="dxa"/></w:tcPr><w:p><w:r><w:t>1F3864</w:t></w:r></w:p></w:tc></w:tr>
+    </w:tbl>
+    <w:sectPr>
+      <w:pgSz w:w="11906" w:h="16838" w:code="9"/>
+      <w:pgMar w:top="1418" w:right="1134" w:bottom="1134" w:left="2268" w:header="709" w:footer="709" w:gutter="0"/>
+      <w:cols w:space="708"/>
+    </w:sectPr>
+  </w:body>
+</w:document>

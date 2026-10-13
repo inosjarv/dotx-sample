@@ -1,0 +1,313 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<!--
+  Hand-written styles for sample-template.dotx.
+  Units: spacing/indent in twips (1/20 pt);
+  Table cells are padded with tblCellMar, not paragraph spacing: LibreOffice drops space-before
+  in the first row after a page break, which would push text into a repeated header's rule.
+  font size in half-points; border sz in eighths of a point.
+  Child elements follow the OOXML schema order (Word rejects out-of-order elements).
+-->
+<w:styles xmlns:w="http://schemas.openxmlformats.org/wordprocessingml/2006/main">
+
+  <w:docDefaults>
+    <w:rPrDefault>
+      <w:rPr>
+        <w:rFonts w:ascii="Calibri" w:hAnsi="Calibri" w:eastAsia="Calibri" w:cs="Calibri"/>
+        <w:sz w:val="22"/>
+        <w:szCs w:val="22"/>
+        <w:lang w:val="en-GB" w:eastAsia="en-US" w:bidi="ar-SA"/>
+      </w:rPr>
+    </w:rPrDefault>
+    <w:pPrDefault>
+      <w:pPr>
+        <!-- Normal's spacing lives here (not on Normal) so table styles can override it in cells -->
+        <w:spacing w:before="0" w:after="160" w:line="276" w:lineRule="auto"/>
+      </w:pPr>
+    </w:pPrDefault>
+  </w:docDefaults>
+
+  <!-- ===== Paragraph styles ===== -->
+
+  <w:style w:type="paragraph" w:default="1" w:styleId="Normal">
+    <w:name w:val="Normal"/>
+    <w:qFormat/>
+  </w:style>
+
+  <w:style w:type="paragraph" w:styleId="BodyText">
+    <w:name w:val="Body Text"/>
+    <w:basedOn w:val="Normal"/>
+    <w:uiPriority w:val="1"/>
+    <w:qFormat/>
+    <w:pPr>
+      <w:spacing w:before="120" w:after="240" w:line="360" w:lineRule="auto"/>
+    </w:pPr>
+  </w:style>
+
+  <w:style w:type="paragraph" w:styleId="Title">
+    <w:name w:val="Title"/>
+    <w:basedOn w:val="Normal"/>
+    <w:next w:val="Normal"/>
+    <w:uiPriority w:val="10"/>
+    <w:qFormat/>
+    <w:pPr>
+      <w:keepNext/>
+      <w:pBdr>
+        <w:bottom w:val="single" w:sz="12" w:space="4" w:color="1F3864"/>
+      </w:pBdr>
+      <w:spacing w:before="0" w:after="360" w:line="240" w:lineRule="auto"/>
+    </w:pPr>
+    <w:rPr>
+      <w:rFonts w:ascii="Georgia" w:hAnsi="Georgia" w:cs="Georgia"/>
+      <w:color w:val="1F3864"/>
+      <w:sz w:val="52"/>
+      <w:szCs w:val="52"/>
+    </w:rPr>
+  </w:style>
+
+  <w:style w:type="paragraph" w:styleId="Heading1">
+    <w:name w:val="heading 1"/>
+    <w:basedOn w:val="Normal"/>
+    <w:next w:val="BodyText"/>
+    <w:uiPriority w:val="9"/>
+    <w:qFormat/>
+    <w:pPr>
+      <w:keepNext/>
+      <w:keepLines/>
+      <w:spacing w:before="480" w:after="240"/>
+      <w:outlineLvl w:val="0"/>
+    </w:pPr>
+    <w:rPr>
+      <w:rFonts w:ascii="Georgia" w:hAnsi="Georgia" w:cs="Georgia"/>
+      <w:b/>
+      <w:bCs/>
+      <w:color w:val="1F3864"/>
+      <w:sz w:val="32"/>
+      <w:szCs w:val="32"/>
+    </w:rPr>
+  </w:style>
+
+  <w:style w:type="paragraph" w:styleId="Heading2">
+    <w:name w:val="heading 2"/>
+    <w:basedOn w:val="Normal"/>
+    <w:next w:val="BodyText"/>
+    <w:uiPriority w:val="9"/>
+    <w:unhideWhenUsed/>
+    <w:qFormat/>
+    <w:pPr>
+      <w:keepNext/>
+      <w:keepLines/>
+      <w:spacing w:before="360" w:after="120"/>
+      <w:outlineLvl w:val="1"/>
+    </w:pPr>
+    <w:rPr>
+      <w:rFonts w:ascii="Georgia" w:hAnsi="Georgia" w:cs="Georgia"/>
+      <w:b/>
+      <w:bCs/>
+      <w:color w:val="1F3864"/>
+      <w:sz w:val="26"/>
+      <w:szCs w:val="26"/>
+    </w:rPr>
+  </w:style>
+
+  <!-- Shaded paragraph: fill + indent (indent keeps the shading inside the text area) -->
+  <w:style w:type="paragraph" w:customStyle="1" w:styleId="ShadedPanel">
+    <w:name w:val="Shaded Panel"/>
+    <w:basedOn w:val="Normal"/>
+    <w:uiPriority w:val="20"/>
+    <w:qFormat/>
+    <w:pPr>
+      <w:pBdr>
+        <w:top w:val="single" w:sz="2" w:space="6" w:color="DEEAF6"/>
+        <w:left w:val="single" w:sz="2" w:space="6" w:color="DEEAF6"/>
+        <w:bottom w:val="single" w:sz="2" w:space="6" w:color="DEEAF6"/>
+        <w:right w:val="single" w:sz="2" w:space="6" w:color="DEEAF6"/>
+      </w:pBdr>
+      <w:shd w:val="clear" w:color="auto" w:fill="DEEAF6"/>
+      <w:spacing w:before="240" w:after="240"/>
+      <w:ind w:left="170" w:right="170"/>
+    </w:pPr>
+  </w:style>
+
+  <!-- ===== Character styles ===== -->
+
+  <w:style w:type="character" w:default="1" w:styleId="DefaultParagraphFont">
+    <w:name w:val="Default Paragraph Font"/>
+    <w:uiPriority w:val="1"/>
+    <w:semiHidden/>
+    <w:unhideWhenUsed/>
+  </w:style>
+
+  <!-- Shaded words inside a sentence -->
+  <w:style w:type="character" w:customStyle="1" w:styleId="ShadedText">
+    <w:name w:val="Shaded Text"/>
+    <w:basedOn w:val="DefaultParagraphFont"/>
+    <w:uiPriority w:val="20"/>
+    <w:qFormat/>
+    <w:rPr>
+      <w:shd w:val="clear" w:color="auto" w:fill="FFF2CC"/>
+    </w:rPr>
+  </w:style>
+
+  <w:style w:type="character" w:styleId="Hyperlink">
+    <w:name w:val="Hyperlink"/>
+    <w:basedOn w:val="DefaultParagraphFont"/>
+    <w:uiPriority w:val="99"/>
+    <w:unhideWhenUsed/>
+    <w:rPr>
+      <w:color w:val="0563C1"/>
+      <w:u w:val="single"/>
+    </w:rPr>
+  </w:style>
+
+  <w:style w:type="character" w:styleId="FollowedHyperlink">
+    <w:name w:val="FollowedHyperlink"/>
+    <w:basedOn w:val="DefaultParagraphFont"/>
+    <w:uiPriority w:val="99"/>
+    <w:semiHidden/>
+    <w:unhideWhenUsed/>
+    <w:rPr>
+      <w:color w:val="954F72"/>
+      <w:u w:val="single"/>
+    </w:rPr>
+  </w:style>
+
+  <!-- ===== Table styles ===== -->
+
+  <w:style w:type="table" w:default="1" w:styleId="TableNormal">
+    <w:name w:val="Normal Table"/>
+    <w:uiPriority w:val="99"/>
+    <w:semiHidden/>
+    <w:unhideWhenUsed/>
+    <w:tblPr>
+      <w:tblInd w:w="0" w:type="dxa"/>
+      <w:tblCellMar>
+        <w:top w:w="0" w:type="dxa"/>
+        <w:left w:w="108" w:type="dxa"/>
+        <w:bottom w:w="0" w:type="dxa"/>
+        <w:right w:w="108" w:type="dxa"/>
+      </w:tblCellMar>
+    </w:tblPr>
+  </w:style>
+
+  <w:style w:type="table" w:customStyle="1" w:styleId="TableBlue">
+    <w:name w:val="Table Blue"/>
+    <w:basedOn w:val="TableNormal"/>
+    <w:uiPriority w:val="40"/>
+    <w:pPr>
+      <w:spacing w:before="0" w:after="0" w:line="240" w:lineRule="auto"/>
+    </w:pPr>
+    <w:tblPr>
+      <w:tblStyleRowBandSize w:val="1"/>
+      <w:tblStyleColBandSize w:val="1"/>
+      <w:tblBorders>
+        <w:top w:val="single" w:sz="8" w:space="0" w:color="2E75B6"/>
+        <w:left w:val="single" w:sz="8" w:space="0" w:color="2E75B6"/>
+        <w:bottom w:val="single" w:sz="8" w:space="0" w:color="2E75B6"/>
+        <w:right w:val="single" w:sz="8" w:space="0" w:color="2E75B6"/>
+        <w:insideH w:val="single" w:sz="8" w:space="0" w:color="2E75B6"/>
+        <w:insideV w:val="single" w:sz="8" w:space="0" w:color="2E75B6"/>
+      </w:tblBorders>
+      <w:tblCellMar>
+        <w:top w:w="60" w:type="dxa"/>
+        <w:left w:w="108" w:type="dxa"/>
+        <w:bottom w:w="60" w:type="dxa"/>
+        <w:right w:w="108" w:type="dxa"/>
+      </w:tblCellMar>
+    </w:tblPr>
+  </w:style>
+
+  <w:style w:type="table" w:customStyle="1" w:styleId="TableRed">
+    <w:name w:val="Table Red"/>
+    <w:basedOn w:val="TableNormal"/>
+    <w:uiPriority w:val="40"/>
+    <w:pPr>
+      <w:spacing w:before="0" w:after="0" w:line="240" w:lineRule="auto"/>
+    </w:pPr>
+    <w:tblPr>
+      <w:tblStyleRowBandSize w:val="1"/>
+      <w:tblStyleColBandSize w:val="1"/>
+      <w:tblBorders>
+        <w:top w:val="single" w:sz="8" w:space="0" w:color="C00000"/>
+        <w:left w:val="single" w:sz="8" w:space="0" w:color="C00000"/>
+        <w:bottom w:val="single" w:sz="8" w:space="0" w:color="C00000"/>
+        <w:right w:val="single" w:sz="8" w:space="0" w:color="C00000"/>
+        <w:insideH w:val="single" w:sz="8" w:space="0" w:color="C00000"/>
+        <w:insideV w:val="single" w:sz="8" w:space="0" w:color="C00000"/>
+      </w:tblBorders>
+      <w:tblCellMar>
+        <w:top w:w="60" w:type="dxa"/>
+        <w:left w:w="108" w:type="dxa"/>
+        <w:bottom w:w="60" w:type="dxa"/>
+        <w:right w:w="108" w:type="dxa"/>
+      </w:tblCellMar>
+    </w:tblPr>
+  </w:style>
+
+  <!-- Dark, thicker outer frame; light, thin inner grid -->
+  <w:style w:type="table" w:customStyle="1" w:styleId="TableTwoTone">
+    <w:name w:val="Table Two Tone"/>
+    <w:basedOn w:val="TableNormal"/>
+    <w:uiPriority w:val="40"/>
+    <w:pPr>
+      <w:spacing w:before="0" w:after="0" w:line="240" w:lineRule="auto"/>
+    </w:pPr>
+    <w:tblPr>
+      <w:tblStyleRowBandSize w:val="1"/>
+      <w:tblStyleColBandSize w:val="1"/>
+      <w:tblBorders>
+        <w:top w:val="single" w:sz="12" w:space="0" w:color="1F3864"/>
+        <w:left w:val="single" w:sz="12" w:space="0" w:color="1F3864"/>
+        <w:bottom w:val="single" w:sz="12" w:space="0" w:color="1F3864"/>
+        <w:right w:val="single" w:sz="12" w:space="0" w:color="1F3864"/>
+        <w:insideH w:val="single" w:sz="4" w:space="0" w:color="BFBFBF"/>
+        <w:insideV w:val="single" w:sz="4" w:space="0" w:color="BFBFBF"/>
+      </w:tblBorders>
+      <w:tblCellMar>
+        <w:top w:w="60" w:type="dxa"/>
+        <w:left w:w="108" w:type="dxa"/>
+        <w:bottom w:w="60" w:type="dxa"/>
+        <w:right w:w="108" w:type="dxa"/>
+      </w:tblCellMar>
+    </w:tblPr>
+  </w:style>
+
+  <!-- No borders at all, except one rule under the header row -->
+  <w:style w:type="table" w:customStyle="1" w:styleId="TableHeaderRule">
+    <w:name w:val="Table Header Rule"/>
+    <w:basedOn w:val="TableNormal"/>
+    <w:uiPriority w:val="40"/>
+    <w:pPr>
+      <w:spacing w:before="0" w:after="0" w:line="240" w:lineRule="auto"/>
+    </w:pPr>
+    <w:tblPr>
+      <w:tblStyleRowBandSize w:val="1"/>
+      <w:tblStyleColBandSize w:val="1"/>
+      <w:tblBorders>
+        <w:top w:val="none" w:sz="0" w:space="0" w:color="auto"/>
+        <w:left w:val="none" w:sz="0" w:space="0" w:color="auto"/>
+        <w:bottom w:val="none" w:sz="0" w:space="0" w:color="auto"/>
+        <w:right w:val="none" w:sz="0" w:space="0" w:color="auto"/>
+        <w:insideH w:val="none" w:sz="0" w:space="0" w:color="auto"/>
+        <w:insideV w:val="none" w:sz="0" w:space="0" w:color="auto"/>
+      </w:tblBorders>
+      <w:tblCellMar>
+        <w:top w:w="60" w:type="dxa"/>
+        <w:left w:w="108" w:type="dxa"/>
+        <w:bottom w:w="60" w:type="dxa"/>
+        <w:right w:w="108" w:type="dxa"/>
+      </w:tblCellMar>
+    </w:tblPr>
+    <w:tblStylePr w:type="firstRow">
+      <w:rPr>
+        <w:b/>
+        <w:bCs/>
+      </w:rPr>
+      <w:tcPr>
+        <w:tcBorders>
+          <w:bottom w:val="single" w:sz="12" w:space="0" w:color="1F3864"/>
+        </w:tcBorders>
+      </w:tcPr>
+    </w:tblStylePr>
+  </w:style>
+
+</w:styles>
